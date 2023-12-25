@@ -23,4 +23,4 @@ git clone git@github.com:facebookresearch/segment-anything.git
 cd segment-anything; pip install -e .
 ```
 ### Dataset
-In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([COESOT](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely [RGBE-SEG].
+In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely [RGBE-SEG].
