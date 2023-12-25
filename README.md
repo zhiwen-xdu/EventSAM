@@ -13,13 +13,11 @@ The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8
 Install EventSAM:
 
 ```
-pip install git+https://github.com/facebookresearch/segment-anything.git
+pip install git+https://github.com/happychenpipi/EventSAM.git
 ```
-
-or clone the repository locally and install with
+and install with
 
 ```
-git clone git@github.com:facebookresearch/segment-anything.git
 cd segment-anything; pip install -e .
 ```
 ### Dataset
