@@ -8,8 +8,7 @@ This paper delves into the nuanced challenge of tailoring the Segment Anything M
 ## Getting Started
 
 ### Installation
-The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`. Please to install both PyTorch and TorchVision dependencies. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
-
+The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`. Please to install both PyTorch and TorchVision dependencies. 
 Install EventSAM:
 
 ```
@@ -18,7 +17,7 @@ pip install git+https://github.com/happychenpipi/EventSAM.git
 and install with
 
 ```
-cd segment-anything; pip install -e .
+cd EventSAM; pip install -e .
 ```
 ### Dataset
 In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely [RGBE-SEG].
