@@ -29,3 +29,8 @@ In this work, we collected a large-scale RGB-Event dataset for event-centric seg
 ## Training
 
 ## Evaluation
+
+## Knowledge
+
+## Contact
+Feedbacks and comments are welcome! Feel free to contact us via [zhiwen.chen@stu.xidian.edu.cn](zhiwen.chen@stu.xidian.edu.cn). 
