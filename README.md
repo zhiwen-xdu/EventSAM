@@ -30,7 +30,7 @@ In this work, we collected a large-scale RGB-Event dataset for event-centric seg
 
 ## Evaluation
 
-## Segmentation Visualization
+## Visualization
 
 ## EventSAM&LLM
 To further validate the strong zero-shot object recognition ability of our event-adapt SAM. We integrate it with a visionlanguage object segmentation framework [LISA](https://github.com/dvlab-research/LISA). Through this, we could further unlock the rich semantic inherent in SAM, for interactive universal object segmentation with Event data. There are some visualizations.
