@@ -1,5 +1,5 @@
 # EventSAM
-Official Code for **Segment Any Events via Weighted Adaptation of Pivotal Tokens** [[`📕Paper`](https://arxiv.org/abs/2312.16222)] 
+Official Code for **Segment Any Events via Weighted Adaptation of Pivotal Tokens** [[`📕Paper`](https://arxiv.org/abs/2312.16222)]; The running code will be announced soon!
 
 <div align="center">
   <img src="assets/Framework.PNG" width="80%" higth="80%">
