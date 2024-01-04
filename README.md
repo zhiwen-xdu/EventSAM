@@ -56,6 +56,7 @@ To further validate the strong zero-shot object recognition ability of our event
 </div>
 
 ## Acknowledgments
+Thanks to [VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT) datasets, and [Segment Anything](https://github.com/facebookresearch/segment-anything/tree/main).
 
 ## Contact
 Feedbacks and comments are welcome! Feel free to contact us via [zhiwen.chen@stu.xidian.edu.cn](zhiwen.chen@stu.xidian.edu.cn). 
