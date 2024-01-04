@@ -32,12 +32,12 @@ python ./event_encoder/train.py
 ```
 
 ## Evaluation
-1. Predict the segment mask:
+1. Predict the segment masks of event images:
 ```
 python ./evaluate/predict_mask.py
 ```
 
-2. Calculate evaluation metrics of predicted masks:
+2. Calculate metrics of predicted masks:
 ```
 python ./evaluate/calculate_metric.py
 ```
