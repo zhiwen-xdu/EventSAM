@@ -27,8 +27,20 @@ In this work, we collected a large-scale RGB-Event dataset for event-centric seg
 
 
 ## Training
+```
+python ./event_encoder/train.py
+```
 
 ## Evaluation
+1. Predict the segment mask:
+```
+python ./evaluate/predict_mask.py
+```
+
+2. Calculate evaluation metrics of predicted masks:
+```
+python ./evaluate/calculate_metric.py
+```
 
 ## Visualization
 <div align="center">
