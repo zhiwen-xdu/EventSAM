@@ -23,8 +23,24 @@ cd EventSAM
 pip install -r requirements.txt
 ```
 ### Data Preparation
-In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. Please download this dataset and put in ./data.
+In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/). Please download these datasets and put in ./data.
 
+ The directory should have the below format:
+    <details open> <summary>Format of RGBE_SEG/MVSEC (click to expand)</summary>
+
+    ```Shell
+    ├── RGBE_SEG dataset
+        ├── Training Subset (473 sequences)
+            ├── dvSave-2021_09_01_06_59_10
+                ├── rgb_image
+                ├── event_image
+            ├── ... 
+        ├── Testing Subset (108 sequences)
+            ├── dvSave-2021_07_30_11_04_12
+                ├── rgb_image
+                ├── event_image
+            ├── ... 
+    ```
 
 ## Training
 ```
