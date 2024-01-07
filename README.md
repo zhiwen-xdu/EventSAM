@@ -1,17 +1,16 @@
 <p align="right">English | <a href="./README_CN.md">简体中文</a></p>
-</p>
 
 <div align="center">
   <img src="assets/Logo02.PNG" width="100%" higth="100%">
+  <h3 align="center"><strong>Segment Any Events via Weighted Adaptation of Pivotal Tokens</strong></h3>
 </div>
 
-
-Official Code for **Segment Any Events via Weighted Adaptation of Pivotal Tokens** [[`📕Paper`](https://arxiv.org/abs/2312.16222)]; The running code will be announced soon!
-
+Official Code for Segment Any Events via Weighted Adaptation of Pivotal Tokens [[`📕Paper`](https://arxiv.org/abs/2312.16222)].
 <div align="center">
   <img src="assets/Framework.PNG" width="80%" higth="80%">
 </div>
 
+## About
 This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. 
 
 ## Getting Started
