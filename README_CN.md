@@ -16,7 +16,7 @@
 </div>
 
 ## 项目概览
-Official Code for Segment Any Events via Weighted Adaptation of Pivotal Tokens [[`📕Paper`](https://arxiv.org/abs/2312.16222)]. This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. 
+这个项目是Segment Any Events via Weighted Adaptation of Pivotal Tokens [[`📕论文`](https://arxiv.org/abs/2312.16222)] 的官方代码. 本文深入探讨了将SAM分割模型迁移到事件域的挑战，其目标是在事件域内实现鲁棒和通用的目标分割。
 <div align="center">
   <img src="assets/Framework.PNG" width="80%" higth="80%">
 </div>
@@ -25,7 +25,7 @@ Official Code for Segment Any Events via Weighted Adaptation of Pivotal Tokens [
 ## 开始
 
 ### 安装
-The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`. Please to install both PyTorch and TorchVision dependencies. 
+我们的代码需要 `python>=3.8`, `pytorch>=1.7` 和 `torchvision>=0.8`等依赖项. 请同时安装PyTorch和TorchVision依赖项。
 
 Clone the repository locally:
 ```
@@ -38,7 +38,7 @@ cd EventSAM
 pip install -r requirements.txt
 ```
 ### 数据准备
-In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/). Please download these datasets and put in ./data.
+在这项工作中，我们从当前可用的像素级对齐数据集中收集了一个大规模的RGB-Event数据集，用于以事件的分割 ([VisEvent](https://sites.google.com/view/viseventtrack/) 和 [COESOT](https://github.com/Event-AHU/COESOT)), 命名为 RGBE-SEG. 为了进一步探讨我们方法的零样本泛化性能, 我们在MV[MVSEC](https://daniilidis-group.github.io/mvsec/) 数据集上显示了更多的分割结果. 请下载这些数据集并把它们放在./data文件夹下.
 
 Format of RGBE_SEG/MVSEC datasets:
 ```Shell
@@ -56,19 +56,19 @@ Format of RGBE_SEG/MVSEC datasets:
 ```
 
 ## 训练
-First download a pre-trained model checkpoint (e.g. ViT-B SAM model) [SAM](https://github.com/facebookresearch/segment-anything/tree/main). Then the model can be used as teacher for rgb-event knowledge distillation:
+首先下载相应的SAM预训练权重 (e.g. ViT-B SAM model) [SAM](https://github.com/facebookresearch/segment-anything/tree/main). 然后，我们运行RGB-Event知识蒸馏模型:
 
 ```
 python ./event_encoder/train.py
 ```
 
 ## 评估
-Predict the segment masks of event images:
+预测事件表征的分割掩码:
 ```
 python ./evaluate/predict_mask.py
 ```
 
-Calculate metrics of predicted masks:
+计算分割掩码的性能指标:
 ```
 python ./evaluate/calculate_metric.py
 ```
@@ -79,7 +79,7 @@ python ./evaluate/calculate_metric.py
 </div>
 
 ## EventSAM与LLM整合
-To further validate the strong zero-shot object recognition ability of our event-adapt SAM. We integrate it with a visionlanguage object segmentation framework [LISA](https://github.com/dvlab-research/LISA). Through this, we could further unlock the rich semantic inherent in SAM, for interactive universal object segmentation with Event data. There are some visualizations.
+为了进一步验证我们的EventSAM强大的零样本目标识别能力.我们将其与整合到视觉语言对象分割框架中 [LISA](https://github.com/dvlab-research/LISA). 通过这种方式，我们可以进一步解锁SAM中丰富语义知识，用于事件数据的交互式通用目标分割。这里是一些可视化实例：
 <div align="center">
     <img src="assets/01.gif"  width="50%" height="50%" /><img src="assets/02.gif" width="50%" height="50%"/>
     <img src="assets/03.gif" width="50%" height="50%" /><img src="assets/04.gif"  width="50%" height="50%"/>
