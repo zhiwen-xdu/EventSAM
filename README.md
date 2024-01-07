@@ -1,9 +1,9 @@
+# EventSAM
+
 <div align="center">
-  <img src="assets/Logo.png" width="80%" higth="80%">
+  <img src="assets/Logo.PNG" width="100%" higth="100%">
 </div>
 
-
-# EventSAM
 Official Code for **Segment Any Events via Weighted Adaptation of Pivotal Tokens** [[`📕Paper`](https://arxiv.org/abs/2312.16222)]; The running code will be announced soon!
 
 <div align="center">
