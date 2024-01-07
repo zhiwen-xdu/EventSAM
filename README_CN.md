@@ -16,15 +16,15 @@
 </div>
 
 ## 项目概览
-这个项目是Segment Any Events via Weighted Adaptation of Pivotal Tokens [[`📕论文`](https://arxiv.org/abs/2312.16222)] 的官方代码. 本文深入探讨了将SAM分割模型迁移到事件域的挑战，其目标是在事件域内实现鲁棒和通用的目标分割。
+这个项目是Segment Any Events via Weighted Adaptation of Pivotal Tokens [[`📕论文`](https://arxiv.org/abs/2312.16222)] 的官方代码。 本文深入探讨了将SAM分割模型迁移到事件域的挑战，其目标是在事件域内实现鲁棒和通用的目标分割。
 <div align="center">
   <img src="assets/Framework.PNG" width="80%" higth="80%">
 </div>
 
 
-## 开始
+## 项目开始
 
-### 安装
+### 安装依赖项
 我们的代码需要 `python>=3.8`, `pytorch>=1.7` 和 `torchvision>=0.8`等依赖项. 请同时安装PyTorch和TorchVision依赖项。
 
 Clone the repository locally:
