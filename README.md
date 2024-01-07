@@ -1,7 +1,7 @@
 <p align="right">English | <a href="./README_CN.md">简体中文</a></p>
 
 <div align="center">
-  <img src="assets/Logo02.PNG" width="100%" higth="100%">
+  <img src="assets/Logo01.PNG" width="100%" higth="100%">
   <h3 align="center"><strong>Segment Any Events via Weighted Adaptation of Pivotal Tokens</strong></h3>
 </div>
 
