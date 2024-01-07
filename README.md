@@ -2,7 +2,17 @@
 
 <div align="center">
   <img src="assets/Logo01.PNG" width="100%" higth="100%">
-  <h3 align="center"><strong>Segment Any Events via Weighted Adaptation of Pivotal Tokens</strong></h3>
+  <h3 align="center"><strong>Segment Any Events via Weighted Adaptation of Pivotal Tokens </strong></h3>
+    <p align="center">
+    <a>Zhiwen Chen</a><sup>1</sup>&nbsp;&nbsp;
+    <a>Zhiyu Zhu</a><sup>2</sup>&nbsp;&nbsp;
+    <a>Yifan Zhang</a><sup>2</sup>&nbsp;&nbsp;
+    <a>Junhui Hou</a><sup>2</sup>&nbsp;&nbsp;
+    <a> Guangming Shi</a><sup>1</sup>&nbsp;&nbsp;
+    <a>Jinjian Wu</a><sup>1</sup>
+    <br>
+    <sup>1</sup>Xidian University&nbsp;&nbsp;&nbsp;
+    <sup>2</sup>City University of Hong Kong&nbsp;&nbsp;&nbsp;
 </div>
 
 ## About
