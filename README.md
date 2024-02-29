@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="assets/Logo02.PNG" width="100%" higth="100%">
-  <h3 align="center"><strong>Segment Any Events via Weighted Adaptation of Pivotal Tokens </strong></h3>
+  <h3 align="center"><strong>Segment Any Events via Weighted Adaptation of Pivotal Tokens [CVPR 2024] </strong></h3>
     <p align="center">
     <a>Zhiwen Chen</a><sup>1</sup>&nbsp;&nbsp;
     <a>Zhiyu Zhu</a><sup>2</sup>&nbsp;&nbsp;
