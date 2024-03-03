@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ### Data Preparation
 In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/). Please download these datasets and put in ./data.
 
-Format of RGBE_SEG/MVSEC datasets:
+Format of the datasets:
 ```Shell
 ├── RGBE_SEG dataset
     ├── Training Subset (473 sequences)
@@ -54,11 +54,43 @@ Format of RGBE_SEG/MVSEC datasets:
             ├── rgb_image
             ├── event_image
         ├── ... 
-    ├── Testing Subset (108 sequences)
+    ├── Testing Subset For Normal Scenes (108 sequences)
         ├── dvSave-2021_07_30_11_04_12
             ├── rgb_image
             ├── event_image
-        ├── ... 
+            ├── gt_mask
+        ├── ...
+    ├── Testing Subset For Degraded Scenes (28 sequences)
+        ├── video_0078
+            ├── rgb_image
+            ├── event_image
+        ├── ...
+
+├── MVSEC_SEG dataset
+    ├── Testing Subset (2 sequences)
+        ├── indoor flying1
+            ├── rgb_image
+            ├── event_image
+            ├── gt_mask
+        ├── ...
+
+├── DDD17_SEG dataset
+    ├── Testing Subset (5 sequences)
+        ├── dir0
+            ├── rgb_image
+            ├── event_image
+            ├── gt_mask
+        ├── ...
+
+├── DSEC_SEG dataset
+    ├── Testing Subset (2 sequences)
+        ├── zurich_city_01_a
+            ├── rgb_image
+            ├── event_image
+            ├── gt_mask
+        ├── ...
+
+
 ```
 
 ## Training
