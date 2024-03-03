@@ -3,6 +3,9 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/segment-any-events-via-weighted-adaptation-of/event-based-object-segmentation-on-rgbe-seg)](https://paperswithcode.com/sota/event-based-object-segmentation-on-rgbe-seg)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/segment-any-events-via-weighted-adaptation-of/event-based-object-segmentation-on-mvsec-seg)](https://paperswithcode.com/sota/event-based-object-segmentation-on-mvsec-seg)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/segment-any-events-via-weighted-adaptation-of/event-based-object-segmentation-on-ddd17-seg)](https://paperswithcode.com/sota/event-based-object-segmentation-on-ddd17-seg)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/segment-any-events-via-weighted-adaptation-of/event-based-object-segmentation-on-dsec-seg)](https://paperswithcode.com/sota/event-based-object-segmentation-on-dsec-seg)
+
 <div align="center">
   <img src="assets/Logo02.PNG" width="100%" higth="100%">
   <h3 align="center"><strong>Segment Any Events via Weighted Adaptation of Pivotal Tokens [CVPR '24] </strong></h3>
@@ -90,7 +93,7 @@ To further validate the strong zero-shot object recognition ability of our event
 </div>
 
 ## Acknowledgments
-Thanks to [VisEvent](https://sites.google.com/view/viseventtrack/), [COESOT](https://github.com/Event-AHU/COESOT), [MVSEC](https://daniilidis-group.github.io/mvsec/) datasets, [SAM](https://github.com/facebookresearch/segment-anything/tree/main) and [LISA](https://github.com/dvlab-research/LISA).
+Thanks to [VisEvent](https://sites.google.com/view/viseventtrack/), [COESOT](https://github.com/Event-AHU/COESOT), [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html), [DSEC](https://dsec.ifi.uzh.ch/) datasets, [SAM](https://github.com/facebookresearch/segment-anything/tree/main) and [LISA](https://github.com/dvlab-research/LISA) Projects.
 
 ## Contact
 Feedbacks and comments are welcome! Feel free to contact us via [zhiwen.chen@stu.xidian.edu.cn](zhiwen.chen@stu.xidian.edu.cn) and [zhiyuzhu2-c@my.cityu.edu.hk](zhiyuzhu2-c@my.cityu.edu.hk). 
