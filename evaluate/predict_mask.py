@@ -8,8 +8,6 @@ from segment_anything.utils.mask_postprocess import *
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 device = "cuda"
 
-# Note: dataset could be RGBE-SEG/MVSEC-SEG/DDD17-SEG/DSEC/SEG.
-dataset = "RGBE-SEG"
 encoder_checkpoint =".../checkpoints/rgbe_encoder.pth"
 decoder_checkpoint =".../pretrained/sam_vit_b.pth"
 model_type = "vit_b"
@@ -29,6 +27,7 @@ mask_generator = SamAutomaticMaskGenerator(sam,
                                            min_mask_region_area=900,
                                            output_mode = "binary_mask",)
 
+# Note: test dataset could be RGBE-SEG/MVSEC-SEG/DDD17-SEG/DSEC-SEG.
 # Note: the evimg_path denotes the voxel image path for testing (e.g. ./data/MVSEC-SEG/indoor_flying1/voxel_image/0488.jpg).
 evimg_path = "..."
 save_path = "..."
