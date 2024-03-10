@@ -111,7 +111,8 @@ def calculate_one_sample(img1,img2):
 
     return average_precision,average_recall,average_iou,weighted_iou
 
-
+# Note: test dataset could be RGBE-SEG/MVSEC-SEG/DDD17-SEG/DSEC-SEG.
+# Note: the gt_dir denotes the groundtruth mask dir for testing (e.g. ./data/Groundtruths/MVSEC-SEG/).
 dataset = "..."
 gt_dir = "..."
 val_mask_exper = "..."
