@@ -51,47 +51,83 @@ Format of the datasets:
 ├── RGBE_SEG dataset
     ├── Training Subset (473 sequences)
         ├── dvSave-2021_09_01_06_59_10
-            ├── rgb_image
-            ├── event_image
+            ├── event          # Event Source File： [N,4]-[x,y,t,p]
+            ├── rgb_image      # RGB Images, which is the input of teacher network.
+            ├── event_image    # Event-oriented Binary Images, which is used for event visualization.
+            ├── voxel_image    # Event-oriented Voxel-like Images, which is the input of student network.
         ├── ... 
-    ├── Testing Subset For Normal Scenes (108 sequences)
+    ├── Testing Subset For Normal Scenes (104 sequences) # Easy, Medium, Hard
         ├── dvSave-2021_07_30_11_04_12
+            ├── event
             ├── rgb_image
             ├── event_image
-            ├── gt_mask
+            ├── voxel_image 
         ├── ...
-    ├── Testing Subset For Degraded Scenes (28 sequences)
+    ├── Testing Subset For Degraded Scenes (28 sequences) # Low Light, Over Exposure, Motion Blur
         ├── video_0078
+            ├── event
             ├── rgb_image
             ├── event_image
+            ├── voxel_image 
         ├── ...
 
 ├── MVSEC_SEG dataset
     ├── Testing Subset (2 sequences)
         ├── indoor flying1
+            ├── event
             ├── rgb_image
             ├── event_image
-            ├── gt_mask
+            ├── voxel_image 
         ├── ...
 
 ├── DDD17_SEG dataset
     ├── Testing Subset (5 sequences)
         ├── dir0
+            ├── event
             ├── rgb_image
             ├── event_image
-            ├── gt_mask
+            ├── voxel_image 
         ├── ...
 
 ├── DSEC_SEG dataset
     ├── Testing Subset (2 sequences)
         ├── zurich_city_01_a
+            ├── event
             ├── rgb_image
             ├── event_image
-            ├── gt_mask
+            ├── voxel_image 
         ├── ...
 
+```
+
+Format of the groundtruth masks or predicted masks:
+```Shell
+├── RGBE_SEG dataset
+    ├── Testing Subset For Normal Scenes (108 sequences) # Easy, Medium, Hard
+        ├── dvSave-2021_07_30_11_04_12
+            ├── **.png     # Groundtruth Masks/Prediction Masks.
+        ├── ...
+
+├── MVSEC_SEG dataset
+    ├── Testing Subset (2 sequences)
+        ├── indoor flying1
+            ├── **.png   
+        ├── ...
+
+├── DDD17_SEG dataset
+    ├── Testing Subset (2 sequences)
+        ├── indoor flying1
+            ├── **.png   
+        ├── ...
+
+├── DSEC_SEG dataset
+    ├── Testing Subset (2 sequences)
+        ├── indoor flying1
+            ├── **.png   
+        ├── ...
 
 ```
+
 
 ## Training
 First download a pre-trained model checkpoint (e.g. ViT-B SAM model) [SAM](https://github.com/facebookresearch/segment-anything/tree/main). Then the model can be used as teacher for rgb-event knowledge distillation:
