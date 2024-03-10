@@ -107,7 +107,6 @@ Pre-trained EventSAM model (e.g. rgbe_encoder.pth) needs to be [downloaded](xx) 
 Predict the segment masks of event images:
 ```
 python ./evaluate/predict_mask.py
-
 ```
 
 Calculate metrics of predicted masks:
@@ -121,7 +120,7 @@ python ./evaluate/calculate_metric.py
 </div>
 
 ## EventSAM&LLM
-To further validate the strong zero-shot object recognition ability of our event-adapt SAM. We integrate it with a visionlanguage object segmentation framework [LISA](https://github.com/dvlab-research/LISA). Through this, we could further unlock the rich semantic inherent in SAM, for interactive universal object segmentation with Event data. There are some visualizations.
+To further validate the strong zero-shot object recognition ability of our event-adapt SAM. We integrate it with a vision-language object segmentation framework [LISA](https://github.com/dvlab-research/LISA). Through this, we could further unlock the rich semantic inherent in SAM, for interactive universal object segmentation with Event data. There are some visualizations.
 <div align="center">
     <img src="assets/01.gif"  width="50%" height="50%" /><img src="assets/02.gif" width="50%" height="50%"/>
     <img src="assets/03.gif" width="50%" height="50%" /><img src="assets/04.gif"  width="50%" height="50%"/>
