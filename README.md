@@ -93,7 +93,7 @@ Format of the Groundtruth Masks or Prediction Masks:
 ├── MVSEC_SEG/DDD17_SEG/DSEC_SEG dataset
     ├── Testing Subset
         ├── seq_name
-            ├── **.png   
+            ├── **.png     # Groundtruth Masks/Prediction Masks.
         ├── ...
 ```
 
