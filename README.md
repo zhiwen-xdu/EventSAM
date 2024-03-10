@@ -101,7 +101,7 @@ python ./event_encoder/train.py
 ```
 
 ## Pre-trained Model
-Pre-trained EventSAM model needs to be [downloaded](xx).
+Pre-trained EventSAM model needs to be [downloaded](xx) and put in ./checkpoints.
 
 ## Evaluation
 Predict the segment masks of event images:
