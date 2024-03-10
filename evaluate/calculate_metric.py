@@ -111,11 +111,9 @@ def calculate_one_sample(img1,img2):
 
     return average_precision,average_recall,average_iou,weighted_iou
 
-# Note: test dataset could be RGBE-SEG/MVSEC-SEG/DDD17-SEG/DSEC-SEG.
 # Note: the gt_dir denotes the groundtruth mask dir for testing (e.g. ./data/Groundtruths/MVSEC-SEG/).
-dataset = "..."
+# Note: the val_mask_txt denotes the metric saver (e.g. ./data/Predictions/MVSEC-SEG.txt).
 gt_dir = "..."
-val_mask_exper = "..."
 val_mask_txt = "..."
 f1 = open(val_mask_txt, 'a')
 
@@ -123,6 +121,7 @@ all_precisions = []
 all_recalls = []
 all_ious = []
 all_weight_ious = []
+# Note: seq e.g. indoor_flying1
 for seq in sorted(glob(gt_dir+"*"))[:]:
     seq_name = seq.split("/")[-1]
 
@@ -130,8 +129,9 @@ for seq in sorted(glob(gt_dir+"*"))[:]:
     seq_precisions = []
     seq_recalls = []
     seq_weight_ious = []
+    # Note: e.g. gt_mask_path=./data/Groundtruths/MVSEC-SEG/indoor_flying1/0488.png; val_mask_path=./data/Predictions/MVSEC-SEG/indoor_flying1/0488.png;
     for gt_mask_path in sorted(glob(seq+"/*.png")):
-        val_mask_path = "..."
+        val_mask_path = gt_mask_path.replace("Groundtruths","Predictions")
         img1 = cv2.imread(gt_mask_path)
         img2 = cv2.imread(val_mask_path)
 
