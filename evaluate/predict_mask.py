@@ -8,11 +8,11 @@ from segment_anything.utils.mask_postprocess import *
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 device = "cuda"
 
+# Note: the encoder_checkpoint save the symmetric weights for rgb and event modal (teacher and student), we use the input_signal to load the corresponding weights.
 encoder_checkpoint =".../checkpoints/rgbe_encoder.pth"
 decoder_checkpoint =".../pretrained/sam_vit_b.pth"
 model_type = "vit_b"
 
-# Note: the input_signal represents to load the weight corresponding to the RGB/event modal.
 sam = sam_evimg_model_registry[model_type](input_signal="evimg",
                                            encoder_checkpoint=encoder_checkpoint,
                                            decoder_checkpoint=decoder_checkpoint)
