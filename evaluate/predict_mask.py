@@ -29,7 +29,7 @@ mask_generator = SamAutomaticMaskGenerator(sam,
                                            min_mask_region_area=900,
                                            output_mode = "binary_mask",)
 
-# Note: the evimg_path denotes the voxel image path for testing (e.g. ./data/MVSEC/indoor_flying1/voxel_image/0488.jpg).
+# Note: the evimg_path denotes the voxel image path for testing (e.g. ./data/MVSEC-SEG/indoor_flying1/voxel_image/0488.jpg).
 evimg_path = "..."
 save_path = "..."
 evimg = cv2.imread(evimg_path)
