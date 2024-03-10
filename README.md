@@ -44,7 +44,7 @@ In this work, we collected a large-scale RGB-Event dataset for event-centric seg
 Format of All Datasets:
 ```Shell
 ├── RGBE_SEG dataset
-    ├── Training Subset (473 sequences)
+    ├── Training Subset (472 sequences)
         ├── dvSave-2021_09_01_06_59_10
             ├── event          # Event Source File： [N,4]-[x,y,t,p]
             ├── rgb_image      # RGB Images, which is the input of teacher network.
