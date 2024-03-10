@@ -101,12 +101,13 @@ python ./event_encoder/train.py
 ```
 
 ## Pre-trained Model
-Pre-trained EventSAM model (e.g. event_encoder.pth) needs to be [downloaded](xx) and put in ./checkpoints.
+Pre-trained EventSAM model (e.g. rgbe_encoder.pth) needs to be [downloaded](xx) and put in ./checkpoints.
 
 ## Evaluation
 Predict the segment masks of event images:
 ```
 python ./evaluate/predict_mask.py
+
 ```
 
 Calculate metrics of predicted masks:
