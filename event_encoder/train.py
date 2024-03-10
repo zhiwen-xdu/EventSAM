@@ -12,10 +12,10 @@ from models.build_mix_rgbe_encoder import _build_mix_rgbe_encoder_b
 def run():
     print('=====Training script for event_vit_encoder')
     # Build dataloaders
-    RGBEDataset = RGBEData('.../RGBE_SEG/')
+    RGBEDataset = RGBEData('.../RGBE-SEG/')
     RGBELoader = torch.utils.data.DataLoader(dataset=RGBEDataset, batch_size=16, shuffle=True)
 
-    # Create network
+    # Create the teacher and student encoders
     RGBE_Encoder = _build_mix_rgbe_encoder_b()
 
     # MultiGPU Train
@@ -75,7 +75,7 @@ def run():
                 source_loss_sum_list = [0.0, 0.0, 0.0, 0.0,0.0]
                 loss_sum_list = [0.0, 0.0, 0.0, 0.0,0.0]
             if iteration % 2000 == 0:
-                torch.save(RGBE_Encoder.state_dict(), '.../event_encoder/checkpoints/rgbe_encoder_0%d_iter.pth' % (iteration // 2000))
+                torch.save(RGBE_Encoder.state_dict(), '../checkpoints/rgbe_encoder_0%d_iter.pth' % (iteration // 2000))
 
         if epoch % 3 == 0:
             scheduler.step()
