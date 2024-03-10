@@ -94,7 +94,7 @@ Format of Groundtruth Masks or Prediction Masks:
 
 
 ## Training
-First download a pre-trained model checkpoint (e.g. ViT-B SAM model) [SAM](https://github.com/facebookresearch/segment-anything/tree/main). Then the model can be used as teacher for rgb-event knowledge distillation:
+First download a pre-trained model checkpoint (e.g. sam_vit_b.pth) [SAM](https://github.com/facebookresearch/segment-anything/tree/main) and put in ./pretrained. Then the model can be used as teacher for rgb-event knowledge distillation:
 
 ```
 python ./event_encoder/train.py
