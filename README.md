@@ -44,9 +44,9 @@ cd EventSAM
 pip install -r requirements.txt
 ```
 ### Data Preparation
-In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/). Please download these datasets and put in ./data.
+In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html) and [DSEC](https://dsec.ifi.uzh.ch/) datasets. Please download these datasets and put in ./data.
 
-Format of the datasets:
+Format of Datasets:
 ```Shell
 ├── RGBE_SEG dataset
     ├── Training Subset (473 sequences)
@@ -73,34 +73,19 @@ Format of the datasets:
 
 ├── MVSEC_SEG dataset
     ├── Testing Subset (2 sequences)
-        ├── indoor flying1
-            ├── event
-            ├── rgb_image
-            ├── event_image
-            ├── voxel_image 
         ├── ...
 
 ├── DDD17_SEG dataset
     ├── Testing Subset (5 sequences)
-        ├── dir0
-            ├── event
-            ├── rgb_image
-            ├── event_image
-            ├── voxel_image 
         ├── ...
 
 ├── DSEC_SEG dataset
     ├── Testing Subset (2 sequences)
-        ├── zurich_city_01_a
-            ├── event
-            ├── rgb_image
-            ├── event_image
-            ├── voxel_image 
         ├── ...
 
 ```
 
-Format of the groundtruth masks or predicted masks:
+Format of the Groundtruth Masks or Prediction Masks:
 ```Shell
 ├── RGBE_SEG dataset
     ├── Testing Subset For Normal Scenes (108 sequences) # Easy, Medium, Hard
