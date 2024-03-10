@@ -10,7 +10,7 @@ import cv2
 class RGBEData(Dataset):
     def __init__(self, root):
         self.root = root
-        self.data_paths = [line.rstrip() for line in open(os.path.join(self.root, 'sam_train.txt'))]
+        self.data_paths = [line.rstrip() for line in open(os.path.join(self.root, 'eventsam_list.txt'))]
         print('The size of data is %d' % (len(self.data_paths)))
         self.image_pixel_mean =  torch.Tensor([0.485,0.456,0.406]).view(-1, 1, 1)
         self.image_pixel_std = torch.Tensor([0.229,0.224,0.225]).view(-1, 1, 1)
@@ -22,8 +22,8 @@ class RGBEData(Dataset):
 
     def read_file_paths(self,index):
         all_paths = self.data_paths[index]
-        image_path, evimg_path, mask_path = all_paths.split("  ")
-        return image_path, evimg_path, mask_path
+        image_path, evimg_path = all_paths.split("  ")
+        return image_path, evimg_path
 
     def __getitem__(self, index):
         image_path, evimg_path, mask_path = self.read_file_paths(index)
@@ -36,16 +36,14 @@ class RGBEData(Dataset):
         image = (image - self.image_pixel_mean) / self.image_pixel_std
         evimg = (evimg - self.evimg_pixel_mean) / self.evimg_pixel_std
 
-        mask = np.load(mask_path)
-        mask = np.expand_dims(mask,axis=0)
-        return image,evimg,mask                          # [3,260,346],[3,260,346],[1,64,64]
+        return image,evimg,mask                          # [3,260,346],[3,260,346]
 
 
 if __name__ == "__main__":
-    dataset = RGBEData('.../RGBE_SEG/')
+    dataset = RGBEData('.../RGBE-SEG/')
     EventDataLoader = torch.utils.data.DataLoader(dataset=dataset, batch_size=32, shuffle=True)
     for image,evimg,_ in EventDataLoader:
-        print(image.shape,evimg.shape,mask.shape)
+        print(image.shape,evimg.shape)
         a = image[0].numpy()
         b = evimg[0].numpy()
         cv2.namedWindow('image')
