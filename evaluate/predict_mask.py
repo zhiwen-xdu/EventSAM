@@ -9,8 +9,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 device = "cuda"
 
 # Note: the encoder_checkpoint save the symmetric weights for rgb and event modal (teacher and student), we use the input_signal to load the corresponding weights.
-encoder_checkpoint =".../checkpoints/rgbe_encoder.pth"
-decoder_checkpoint =".../pretrained/sam_vit_b.pth"
+encoder_checkpoint ="../checkpoints/rgbe_encoder.pth"
+decoder_checkpoint ="../pretrained/sam_vit_b.pth"
 model_type = "vit_b"
 
 sam = sam_evimg_model_registry[model_type](input_signal="evimg",
