@@ -27,8 +27,8 @@ mask_generator = SamAutomaticMaskGenerator(sam,
                                            min_mask_region_area=900,
                                            output_mode = "binary_mask",)
 
-# Note: test dataset could be RGBE-SEG/MVSEC-SEG/DDD17-SEG/DSEC-SEG.
-# Note: the evimg_path denotes the voxel image path for testing (e.g. ./data/MVSEC-SEG/indoor_flying1/voxel_image/0488.jpg).
+# Note: the evimg_path denotes the voxel image path for testing (e.g. ./data/Datasets/MVSEC-SEG/indoor_flying1/voxel_image/0488.jpg).
+# Note:  the save_path denotes the predicted mask path (./data/Predictions/MVSEC-SEG/indoor_flying1/0488.png);
 evimg_path = "..."
 save_path = "..."
 evimg = cv2.imread(evimg_path)
@@ -38,4 +38,4 @@ masks = remove_small_mask(masks)
 masks = remove_repeat_mask(masks)
 mask_image = obtain_mask_image(masks) * 255
 mask_image = mask_image.astype(np.uint8)
-cv2.imwrite(save_path, mask_image)s
+cv2.imwrite(save_path, mask_image)
