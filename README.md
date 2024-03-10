@@ -71,16 +71,13 @@ Format of Datasets:
             ├── voxel_image 
         ├── ...
 
-├── MVSEC_SEG dataset
-    ├── Testing Subset (2 sequences)
-        ├── ...
-
-├── DDD17_SEG dataset
-    ├── Testing Subset (5 sequences)
-        ├── ...
-
-├── DSEC_SEG dataset
-    ├── Testing Subset (2 sequences)
+├── MVSEC_SEG/DDD17_SEG/DSEC_SEG dataset
+    ├── Testing Subset
+        ├── seq_name
+            ├── event
+            ├── rgb_image
+            ├── event_image
+            ├── voxel_image 
         ├── ...
 
 ```
@@ -93,24 +90,11 @@ Format of the Groundtruth Masks or Prediction Masks:
             ├── **.png     # Groundtruth Masks/Prediction Masks.
         ├── ...
 
-├── MVSEC_SEG dataset
-    ├── Testing Subset (2 sequences)
-        ├── indoor flying1
+├── MVSEC_SEG/DDD17_SEG/DSEC_SEG dataset
+    ├── Testing Subset
+        ├── seq_name
             ├── **.png   
         ├── ...
-
-├── DDD17_SEG dataset
-    ├── Testing Subset (2 sequences)
-        ├── indoor flying1
-            ├── **.png   
-        ├── ...
-
-├── DSEC_SEG dataset
-    ├── Testing Subset (2 sequences)
-        ├── indoor flying1
-            ├── **.png   
-        ├── ...
-
 ```
 
 
