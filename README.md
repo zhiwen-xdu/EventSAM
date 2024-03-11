@@ -31,8 +31,6 @@ Official Code for Segment Any Events via Weighted Adaptation of Pivotal Tokens [
 ## Getting Started
 
 ### Installation
-The code requires `python>=3.8`, as well as `pytorch>=1.7` and `torchvision>=0.8`. Please to install both PyTorch and TorchVision dependencies. 
-
 Clone the repository locally:
 ```
 pip install git+https://github.com/happychenpipi/EventSAM.git
