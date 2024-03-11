@@ -38,6 +38,13 @@ Clone the repository locally:
 pip install git+https://github.com/happychenpipi/EventSAM.git
 ```
 
+Create and activate a conda environment and install the required packages:
+```
+conda create -n eventsam python=3.8
+conda activate eventsam
+bash install_eventsam.sh
+```
+
 ### Data Preparation
 In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html) and [DSEC](https://dsec.ifi.uzh.ch/) datasets. In addition, we also provide corresponding groundtruth masks or prediction results for comparison. Please [download](xx) these data and put in ./data.
 
