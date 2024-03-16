@@ -22,7 +22,7 @@
 </div>
 
 ## About
-Official Code for Segment Any Events via Weighted Adaptation of Pivotal Tokens [[`📕Paper`](https://arxiv.org/abs/2312.16222)]. This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. **Note: The relevant datasets and well-trained weights are currently being uploaded, which is a bit slow. Please be patient and wait.**
+Official Code for Segment Any Events via Weighted Adaptation of Pivotal Tokens [[`📕Paper`](https://arxiv.org/abs/2312.16222)]. This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. 
 <div align="center">
   <img src="assets/Framework.PNG" width="80%" higth="80%">
 </div>
