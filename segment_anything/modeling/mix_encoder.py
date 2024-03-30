@@ -130,11 +130,11 @@ class Mix_ImageEncoderViT(nn.Module):
         batch_size = x.shape[0]
         attn_weight_11= torch.ones((batch_size,1,32,32),device=device)                 # [B,1,32,32]
         self.token_weight_dict["block_11"] = attn_weight_11
-        attn_matrix_8 = (self.med_attn_matrix["block_11"].to(device) @ self.med_attn_matrix["block_10"].to(device)) @ self.med_attn_matrix["block_9"].to(device)
+        attn_matrix_8 = self.med_attn_matrix["block_9"].to(device)
         self.token_weight_dict["block_8"] = self.matirx_to_weight(attn_matrix_8)     # [B,1,32,32]
-        attn_matrix_5 = (self.med_attn_matrix["block_8"].to(device) @ self.med_attn_matrix["block_7"].to(device)) @ self.med_attn_matrix["block_6"].to(device)
+        attn_matrix_5 = self.med_attn_matrix["block_6"].to(device)
         self.token_weight_dict["block_5"] = self.matirx_to_weight(attn_matrix_5)     # [B,1,32,32]
-        attn_matrix_2 = (self.med_attn_matrix["block_5"].to(device) @ self.med_attn_matrix["block_4"].to(device)) @ self.med_attn_matrix["block_3"].to(device)
+        attn_matrix_2 = self.med_attn_matrix["block_3"].to(device)
         self.token_weight_dict["block_2"] = self.matirx_to_weight(attn_matrix_2)     # [B,1,32,32]
 
         return self.med_features, self.token_weight_dict
