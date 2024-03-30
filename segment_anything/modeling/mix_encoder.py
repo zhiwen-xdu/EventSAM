@@ -245,21 +245,21 @@ class Mix_EvimgEncoderViT(nn.Module):
             LayerNorm2d(out_chans),
         )
 
-    def mix_tokens(self,evimg_tokens,image_tokens,event_masks):
-        all_idx = torch.nonzero(event_masks == 1)
-        event_token_nums = event_masks.sum()
-        x = torch.randint(0, event_token_nums - 1, (int(event_token_nums * 0.1),))
-        select_idx = all_idx[x]
-        select_tokens = image_tokens[select_idx[:, 0], select_idx[:, 2], select_idx[:, 3],:]
-        evimg_tokens[select_idx[:, 0], select_idx[:, 2], select_idx[:, 3],:] = select_tokens
+    # def mix_tokens(self,evimg_tokens,image_tokens,event_masks):
+    #     all_idx = torch.nonzero(event_masks == 1)
+    #     event_token_nums = event_masks.sum()
+    #     x = torch.randint(0, event_token_nums - 1, (int(event_token_nums * 0.1),))
+    #     select_idx = all_idx[x]
+    #     select_tokens = image_tokens[select_idx[:, 0], select_idx[:, 2], select_idx[:, 3],:]
+    #     evimg_tokens[select_idx[:, 0], select_idx[:, 2], select_idx[:, 3],:] = select_tokens
 
-        return evimg_tokens
+    #     return evimg_tokens
 
 
-    def forward(self, evimgs,image_tokens,masks):
+    def forward(self, evimgs,image_tokens):
         # [B,C,H,W] -> [B,H,W,C]
         x = self.patch_embed(evimgs)
-        x = self.mix_tokens(x,image_tokens,masks)
+        # x = self.mix_tokens(x,image_tokens,masks)
 
         if self.pos_embed is not None:
             x = x + self.pos_embed
