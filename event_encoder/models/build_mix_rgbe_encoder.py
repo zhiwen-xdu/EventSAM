@@ -51,7 +51,7 @@ class Mix_RGBE_Encoder(nn.Module):
         """
         input_images = self.image_preprocess(images)
         input_evimgs = self.evimg_preprocess(evimgs)
-        image_tokens, image_embeddings_dict, token_weights_dict = self.image_encoder(input_images)
+        image_embeddings_dict, token_weights_dict = self.image_encoder(input_images)
         evimg_embeddings_dict = self.evimg_encoder(input_evimgs,image_tokens,masks)
 
         return image_embeddings_dict,evimg_embeddings_dict,token_weights_dict
