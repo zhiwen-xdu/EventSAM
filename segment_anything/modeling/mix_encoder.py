@@ -256,7 +256,7 @@ class Mix_EvimgEncoderViT(nn.Module):
     #     return evimg_tokens
 
 
-    def forward(self, evimgs,image_tokens):
+    def forward(self, evimgs):
         # [B,C,H,W] -> [B,H,W,C]
         x = self.patch_embed(evimgs)
         # x = self.mix_tokens(x,image_tokens,masks)
