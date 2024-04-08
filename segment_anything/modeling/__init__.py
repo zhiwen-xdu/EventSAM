@@ -10,4 +10,4 @@ from .mask_decoder import MaskDecoder
 from .prompt_encoder import PromptEncoder
 from .transformer import TwoWayTransformer
 from .mix_encoder import Mix_ImageEncoderViT,Mix_EvimgEncoderViT
-# from .image_encoder_for_grad import ImageEncoderViT_For_Grad
+from .source_image_encoder import Source_ImageEncoderViT
