@@ -7,7 +7,7 @@
 import torch
 from functools import partial
 
-from segment_anything.modeling import ImageEncoderViT, MaskDecoder, PromptEncoder, Sam, TwoWayTransformer
+from segment_anything.modeling import Source_ImageEncoderViT, MaskDecoder, PromptEncoder, Sam, TwoWayTransformer
 
 
 
@@ -54,7 +54,7 @@ def _build_evimg_sam(
     vit_patch_size = 16
     image_embedding_size = image_size // vit_patch_size
     sam = Sam(
-        image_encoder=ImageEncoderViT(
+        image_encoder=Source_ImageEncoderViT(
             depth=encoder_depth,
             embed_dim=encoder_embed_dim,
             img_size=image_size,
