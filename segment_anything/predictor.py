@@ -96,8 +96,8 @@ class SamPredictor:
         input_image = self.model.preprocess(transformed_image)
         # self.features: [B, 256, 64, 64]
         # embedding num: 64x64, 64=1024/16
-        print(transformed_image.max(),input_image.max())
-        self.features,_ = self.model.image_encoder(input_image)
+        # print(transformed_image.max(),input_image.max())
+        self.features = self.model.image_encoder(input_image)
         self.is_image_set = True
 
     def predict(
