@@ -46,7 +46,7 @@ bash install_eventsam.sh
 ### Data Preparation
 In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html) and [DSEC](https://dsec.ifi.uzh.ch/) datasets. In addition, we also provide corresponding groundtruth masks or prediction results for comparison. Please download these data with the link below and put in ./data.
 
-[Datasets](https://pan.baidu.com/s/1ravNtXNu48aUdNj1MDEbxg)  Code：1234 [Groundtruths](https://pan.baidu.com/s/1PDFZd-WF1-3R1uvJA9Zz2w)  Code：1234 [Predictions](https://pan.baidu.com/s/1152y0zs7uoSGuJU19vD3Yg)  Code：1234 
+[Datasets](https://pan.baidu.com/s/1crXe_R8THRJVvr5YhqYdGw)  Code：1234 [Groundtruths](https://pan.baidu.com/s/1dyX_5loFGEZaWCCNQu0X4A)  Code：1234 [Predictions](https://pan.baidu.com/s/1Lx-01RqFhMS_TG2SXXvI5w)  Code：1234 
 
 
 
@@ -112,7 +112,7 @@ python ./event_encoder/train.py
 ## Pre-trained Model
 Pre-trained EventSAM model (e.g. rgbe_encoder.pth) needs to be downloaded and put in ./checkpoints.  
 
-[EventSAM Model](https://pan.baidu.com/s/1lffKgFuG2V9830rfr-fGNg)  Code：1234 
+[EventSAM Model](https://pan.baidu.com/s/1_srqKTBRESvD0jYDQiN_FQ)  Code：1234 
 
 
 ## Evaluation
