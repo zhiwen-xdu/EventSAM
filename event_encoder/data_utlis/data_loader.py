@@ -26,7 +26,7 @@ class RGBEData(Dataset):
         return image_path, evimg_path
 
     def __getitem__(self, index):
-        image_path, evimg_path, mask_path = self.read_file_paths(index)
+        image_path, evimg_path = self.read_file_paths(index)
         image = cv2.imread(image_path)
         evimg = cv2.imread(evimg_path)
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -36,7 +36,7 @@ class RGBEData(Dataset):
         image = (image - self.image_pixel_mean) / self.image_pixel_std
         evimg = (evimg - self.evimg_pixel_mean) / self.evimg_pixel_std
 
-        return image,evimg,mask                          # [3,260,346],[3,260,346]
+        return image,evimg                          # [3,260,346],[3,260,346]
 
 
 if __name__ == "__main__":
