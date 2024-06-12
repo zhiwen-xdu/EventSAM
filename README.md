@@ -149,11 +149,13 @@ Feedbacks and comments are welcome! Feel free to contact us via [zhiwen.chen@stu
 If you use EventSAM in your research, please use the following BibTeX entry.
 
 ```
-@article{chen2023segment,
-  title={Segment Any Events via Weighted Adaptation of Pivotal Tokens},
-  author={Chen, Zhiwen and Zhu, Zhiyu and Zhang, Yifan and Hou, Junhui and Shi, Guangming and Wu, Jinjian},
-  journal={arXiv preprint arXiv:2312.16222},
-  year={2023}
+@InProceedings{Chen_2024_CVPR,
+    author    = {Chen, Zhiwen and Zhu, Zhiyu and Zhang, Yifan and Hou, Junhui and Shi, Guangming and Wu, Jinjian},
+    title     = {Segment Any Event Streams via Weighted Adaptation of Pivotal Tokens},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {3890-3900}
 }
 ```
 
