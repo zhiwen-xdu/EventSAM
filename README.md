@@ -21,6 +21,16 @@
     <sup>2</sup>City University of Hong Kong&nbsp;&nbsp;&nbsp;
 </div>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2312.16222" target='_blank'>
+    <img src="https://img.shields.io/badge/Paper-%F0%9F%93%83-purple">
+  </a>
+  
+  <a href="" target='_blank'>
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=zhiwen-xdu.EventSAM&left_color=gray&right_color=purple">
+  </a>
+</p>
+
 ## About
 Official Code for Segment Any Events via Weighted Adaptation of Pivotal Tokens [[`📕Paper`](https://arxiv.org/abs/2312.16222)]. This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. 
 <div align="center">
