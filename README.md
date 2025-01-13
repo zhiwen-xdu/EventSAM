@@ -57,10 +57,7 @@ bash install_eventsam.sh
 In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html) and [DSEC](https://dsec.ifi.uzh.ch/) datasets. In addition, we also provide corresponding groundtruth masks or prediction results for comparison. Please download these data with the link below and put in ./data.
 
 [Datasets](https://pan.baidu.com/s/1crXe_R8THRJVvr5YhqYdGw)  Code：1234 [Groundtruths](https://pan.baidu.com/s/1dyX_5loFGEZaWCCNQu0X4A)  Code：1234 [Predictions](https://pan.baidu.com/s/1Lx-01RqFhMS_TG2SXXvI5w)  Code：1234 
-
-  <a href="(https://pan.baidu.com/s/1crXe_R8THRJVvr5YhqYdGw" target='_blank'>
-    <img src="https://img.shields.io/badge/Datasets-purple">
-  </a>
+<a href="https://pan.baidu.com/s/1crXe_R8THRJVvr5YhqYdGw" target='_blank'><img src="https://img.shields.io/badge/Datasets-purple"></a> <a href="https://pan.baidu.com/s/1dyX_5loFGEZaWCCNQu0X4A" target='_blank'><img src="https://img.shields.io/badge/Code-blue"></a> <a href="https://pan.baidu.com/s/1Lx-01RqFhMS_TG2SXXvI5w" target='_blank'><img src="https://img.shields.io/badge/Predictions-yellow"></a>
 
 Format of All Datasets:
 ```Shell
