@@ -32,7 +32,7 @@
 </p>
 
 ## About
-Official Code for Segment Any Events via Weighted Adaptation of Pivotal Tokens. This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. 
+Official Code for Segment Any Event Streams via Weighted Adaptation of Pivotal Tokens. This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. 
 <div align="center">
   <img src="assets/Framework.PNG" width="80%" higth="80%">
 </div>
@@ -136,7 +136,7 @@ Calculate metrics of predicted masks:
 python ./evaluate/calculate_metric.py
 ```
 
-## Visualization
+## :movie_camera: Visualization
 <div align="center">
   <img src="assets/Visual.PNG" width="100%" higth="100%">
 </div>
