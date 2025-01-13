@@ -117,9 +117,7 @@ python ./event_encoder/train.py
 ```
 
 ## Pre-trained Model
-Pre-trained EventSAM model (e.g. rgbe_encoder.pth) needs to be downloaded and put in ./checkpoints.  
-
-[EventSAM Model](https://pan.baidu.com/s/1_srqKTBRESvD0jYDQiN_FQ)  Code：1234 
+Pre-trained EventSAM model (e.g. rgbe_encoder.pth) needs to be downloaded and put in ./checkpoints.  <a href="https://pan.baidu.com/s/1mFtvLAkHFpnGmx_8Ky85kQ?pwd=3c3e" target='_blank'><img src="https://img.shields.io/badge/Checkpoint-purple"></a>
 
 
 ## Evaluation
