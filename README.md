@@ -31,16 +31,16 @@
   </a>
 </p>
 
-## 👀 About
+## ![image](https://github.com/user-attachments/assets/1ae19de2-b18b-4b0d-a206-19f0666757fb) About
 Official Code for Segment Any Event Streams via Weighted Adaptation of Pivotal Tokens. This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. 
 <div align="center">
   <img src="assets/Framework.PNG" width="80%" higth="80%">
 </div>
 
 
-## ![image](https://github.com/user-attachments/assets/e97515f4-20a2-43d5-a07c-a729b8d17d84) Getting Started
+## ![image](https://github.com/user-attachments/assets/a947f5ed-e268-447b-9377-1b33b63276cd) Getting Started
 
-### ![image](https://github.com/user-attachments/assets/4097572a-20c3-4116-aa0c-79d62229fe08) Installation
+### ![image](https://github.com/user-attachments/assets/63613a3a-b789-4d2f-98b8-f2caf2f1970f) Installation
 Clone the repository locally:
 ```
 pip install git+https://github.com/happychenpipi/EventSAM.git
@@ -116,11 +116,11 @@ First download a pre-trained model checkpoint (e.g. sam_vit_b.pth) [SAM](https:/
 python ./event_encoder/train.py
 ```
 
-## Pre-trained Model
+## ![image](https://github.com/user-attachments/assets/8a8ac837-f96e-4f31-b926-71c804cf1aab) Pre-trained Model
 Pre-trained EventSAM model (e.g. rgbe_encoder.pth) needs to be downloaded and put in ./checkpoints.  <a href="https://pan.baidu.com/s/1mFtvLAkHFpnGmx_8Ky85kQ?pwd=3c3e" target='_blank'><img src="https://img.shields.io/badge/Checkpoint-purple"></a>
 
 
-## Evaluation
+## ![image](https://github.com/user-attachments/assets/4ba6ddbe-6ff9-4962-aca9-68c26ced0779) Evaluation
 Predict the segment masks of event images:
 ```
 python ./evaluate/predict_mask.py
@@ -131,12 +131,12 @@ Calculate metrics of predicted masks:
 python ./evaluate/calculate_metric.py
 ```
 
-## :movie_camera: Visualization
+## ![image](https://github.com/user-attachments/assets/cb81914a-61a4-43b5-9274-a541729c25b1) Visualization
 <div align="center">
   <img src="assets/Visual.PNG" width="100%" higth="100%">
 </div>
 
-## EventSAM&LLM
+## ![image](https://github.com/user-attachments/assets/c3927e4e-2855-496d-99ff-6916e3b7c63a) EventSAM&LLM
 To further validate the strong zero-shot object recognition ability of our event-adapt SAM. We integrate it with a vision-language object segmentation framework [LISA](https://github.com/dvlab-research/LISA). Through this, we could further unlock the rich semantic inherent in SAM, for interactive universal object segmentation with Event data. There are some visualizations.
 <div align="center">
     <img src="assets/01.gif"  width="50%" height="50%" /><img src="assets/02.gif" width="50%" height="50%"/>
