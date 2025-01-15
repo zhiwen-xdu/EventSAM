@@ -38,7 +38,7 @@ Official Code for Segment Any Event Streams via Weighted Adaptation of Pivotal T
 </div>
 
 
-## ![image](https://github.com/user-attachments/assets/a947f5ed-e268-447b-9377-1b33b63276cd) Getting Started
+## ![image](https://github.com/user-attachments/assets/4fdc3607-d768-47ae-9d07-75f5faa2be4a) Getting Started
 
 ### ![image](https://github.com/user-attachments/assets/63613a3a-b789-4d2f-98b8-f2caf2f1970f) Installation
 Clone the repository locally:
