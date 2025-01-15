@@ -150,7 +150,7 @@ Thanks to [VisEvent](https://sites.google.com/view/viseventtrack/), [COESOT](htt
 ## Contact
 Feedbacks and comments are welcome! Feel free to contact us via [zhiwen.chen@stu.xidian.edu.cn](zhiwen.chen@stu.xidian.edu.cn) and [zhiyuzhu2-c@my.cityu.edu.hk](zhiyuzhu2-c@my.cityu.edu.hk). 
 
-## 📚 Citing EventSAM
+## 📚 Citation
 If you use EventSAM in your research, please use the following BibTeX entry.
 
 ```
