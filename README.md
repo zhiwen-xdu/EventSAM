@@ -31,16 +31,16 @@
   </a>
 </p>
 
-## About
+## 👀 About
 Official Code for Segment Any Event Streams via Weighted Adaptation of Pivotal Tokens. This paper delves into the nuanced challenge of tailoring the Segment Anything Models (SAMs) for integration with event data, with the overarching objective of attaining robust and universal object segmentation within the event-centric domain. 
 <div align="center">
   <img src="assets/Framework.PNG" width="80%" higth="80%">
 </div>
 
 
-## Getting Started
+## 🔧 Getting Started
 
-### Installation
+### ⚙️ Installation
 Clone the repository locally:
 ```
 pip install git+https://github.com/happychenpipi/EventSAM.git
@@ -53,7 +53,7 @@ conda activate eventsam
 bash install_eventsam.sh
 ```
 
-### Data Preparation
+### 📈 Data Preparation
 In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html) and [DSEC](https://dsec.ifi.uzh.ch/) datasets. In addition, we also provide corresponding groundtruth masks or prediction results for comparison. Please download these data with the link below and put in ./data.
 <a href="https://pan.baidu.com/s/19ruTHhwtzzVlFG0j-cO19A?pwd=4ek2" target='_blank'><img src="https://img.shields.io/badge/Datasets-purple"></a> <a href="https://pan.baidu.com/s/19-JwiJsMWxz4czaxNwXeSQ?pwd=uq4x" target='_blank'><img src="https://img.shields.io/badge/Groundtruths-blue"></a> <a href="https://pan.baidu.com/s/1kh_6hFgyuDw04bDQLc9O_w?pwd=hn6m" target='_blank'><img src="https://img.shields.io/badge/Predictions-yellow"></a>
 
@@ -109,7 +109,7 @@ Format of Groundtruth Masks or Prediction Masks:
 ```
 
 
-## Training
+## 🚀 Training
 First download a pre-trained model checkpoint (e.g. sam_vit_b.pth) [SAM](https://github.com/facebookresearch/segment-anything/tree/main) and put in ./pretrained. Then the model can be used as teacher for rgb-event knowledge distillation:
 
 ```
@@ -150,7 +150,7 @@ Thanks to [VisEvent](https://sites.google.com/view/viseventtrack/), [COESOT](htt
 ## Contact
 Feedbacks and comments are welcome! Feel free to contact us via [zhiwen.chen@stu.xidian.edu.cn](zhiwen.chen@stu.xidian.edu.cn) and [zhiyuzhu2-c@my.cityu.edu.hk](zhiyuzhu2-c@my.cityu.edu.hk). 
 
-## Citing EventSAM
+## 📚 Citing EventSAM
 If you use EventSAM in your research, please use the following BibTeX entry.
 
 ```
