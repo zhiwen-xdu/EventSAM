@@ -38,9 +38,9 @@ Official Code for Segment Any Event Streams via Weighted Adaptation of Pivotal T
 </div>
 
 
-## 🔧 Getting Started
+## ![image](https://github.com/user-attachments/assets/e97515f4-20a2-43d5-a07c-a729b8d17d84) Getting Started
 
-### ⚙️ Installation
+### ![image](https://github.com/user-attachments/assets/4097572a-20c3-4116-aa0c-79d62229fe08) Installation
 Clone the repository locally:
 ```
 pip install git+https://github.com/happychenpipi/EventSAM.git
@@ -144,10 +144,10 @@ To further validate the strong zero-shot object recognition ability of our event
     <img src="assets/05.gif" width="50%" height="50%" /><img src="assets/06.gif" width="50%" height="50%">
 </div>
 
-## Acknowledgments
+## ![image](https://github.com/user-attachments/assets/42c6ae62-1a34-489b-b13a-4e0999d7797c) Acknowledgments
 Thanks to [VisEvent](https://sites.google.com/view/viseventtrack/), [COESOT](https://github.com/Event-AHU/COESOT), [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html), [DSEC](https://dsec.ifi.uzh.ch/) datasets, [SAM](https://github.com/facebookresearch/segment-anything/tree/main) and [LISA](https://github.com/dvlab-research/LISA) projects.
 
-## Contact
+## ![image](https://github.com/user-attachments/assets/7a8438f1-b489-404d-bee6-25f0219f901b) Contact
 Feedbacks and comments are welcome! Feel free to contact us via [zhiwen.chen@stu.xidian.edu.cn](zhiwen.chen@stu.xidian.edu.cn) and [zhiyuzhu2-c@my.cityu.edu.hk](zhiyuzhu2-c@my.cityu.edu.hk). 
 
 ## 📚 Citation
