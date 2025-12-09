@@ -54,8 +54,13 @@ bash install_eventsam.sh
 ```
 
 ### 📈 Data Preparation
-In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html) and [DSEC](https://dsec.ifi.uzh.ch/) datasets. In addition, we also provide corresponding groundtruth masks or prediction results for comparison. Please download these data with the link below and put in ./data.
-<a href="https://pan.baidu.com/s/19ruTHhwtzzVlFG0j-cO19A?pwd=4ek2" target='_blank'><img src="https://img.shields.io/badge/Datasets-purple"></a> <a href="https://pan.baidu.com/s/19-JwiJsMWxz4czaxNwXeSQ?pwd=uq4x" target='_blank'><img src="https://img.shields.io/badge/Groundtruths-blue"></a> <a href="https://pan.baidu.com/s/1kh_6hFgyuDw04bDQLc9O_w?pwd=hn6m" target='_blank'><img src="https://img.shields.io/badge/Predictions-yellow"></a>
+In this work, we collected a large-scale RGB-Event dataset for event-centric segmentation, from current available pixel-level aligned datasets ([VisEvent](https://sites.google.com/view/viseventtrack/) and [COESOT](https://github.com/Event-AHU/COESOT)), namely RGBE-SEG. To explore the zero-shot performance of our method, we showed more segmentation results on [MVSEC](https://daniilidis-group.github.io/mvsec/), [DDD17](https://pkuml.org/resources/pku-ddd17-car.html) and [DSEC](https://dsec.ifi.uzh.ch/) datasets. In addition, we also provide corresponding groundtruth masks or prediction results for comparison. Please download these data with the link below and put in ./data. 
+
+Baidu Pan <a href="https://pan.baidu.com/s/19ruTHhwtzzVlFG0j-cO19A?pwd=4ek2" target='_blank'><img src="https://img.shields.io/badge/Datasets-purple"></a> <a href="https://pan.baidu.com/s/19-JwiJsMWxz4czaxNwXeSQ?pwd=uq4x" target='_blank'><img src="https://img.shields.io/badge/Groundtruths-blue"></a> <a href="https://pan.baidu.com/s/1kh_6hFgyuDw04bDQLc9O_w?pwd=hn6m" target='_blank'><img src="https://img.shields.io/badge/Predictions-yellow"></a>
+
+Google Drive <a href="https://drive.google.com/drive/folders/1XftvgcyvTulyql5Uoj9rDIPihP3Yx7On?usp=sharing" target='_blank'><img src="https://img.shields.io/badge/Datasets+Groundtruths+Predictions-red"></a>  
+
+
 
 Format of All Datasets:
 ```Shell
@@ -117,7 +122,8 @@ python ./event_encoder/train.py
 ```
 
 ## ![image](https://github.com/user-attachments/assets/8a8ac837-f96e-4f31-b926-71c804cf1aab) Pre-trained Model
-Pre-trained EventSAM model (e.g. rgbe_encoder.pth) needs to be downloaded and put in ./checkpoints.  <a href="https://pan.baidu.com/s/1mFtvLAkHFpnGmx_8Ky85kQ?pwd=3c3e" target='_blank'><img src="https://img.shields.io/badge/Checkpoint-purple"></a>
+Pre-trained EventSAM model (e.g. rgbe_encoder.pth) needs to be downloaded and put in ./checkpoints. <a href="https://pan.baidu.com/s/1mFtvLAkHFpnGmx_8Ky85kQ?pwd=3c3e" target='_blank'><img src="https://img.shields.io/badge/Baidu Pan-purple"></a>  <a href="https://drive.google.com/drive/folders/1XftvgcyvTulyql5Uoj9rDIPihP3Yx7On?usp=sharing" target='_blank'><img src="https://img.shields.io/badge/Google Drive-purple"></a>
+
 
 
 ## ![image](https://github.com/user-attachments/assets/4ba6ddbe-6ff9-4962-aca9-68c26ced0779) Evaluation
